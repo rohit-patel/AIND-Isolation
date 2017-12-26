@@ -9,6 +9,20 @@
 
 This repository implements game agents capable of playing the game of isolation. The agents outperform the stock players solely through improved heuristic functions.
 
+### Custom Agent Performance
+
+Match # | Opponent | AB_Improved | AB_Custom | AB_Custom_2 | AB_Custom_3 |
+|:----:|----|:----:|:----:|:----:|:----:|
+|||Won  \|  Lost|Won  \|  Lost|Won  \|  Lost|Won  \|  Lost|
+|1|Random| 38  \|  2| 38  \|  2| 38  \|  2| 36  \|  4|
+|2|MM_Open| 32  \|  8| 31  \|  9| 32  \|  8| 34  \|  6|
+|3|MM_Center| 36  \|  4| 38  \|  2| 34  \|  6| 37  \|  3|
+|4|MM_Improved| 30  \|  10| 33  \|  7| 35  \|  5| 30  \|  10|
+|5|AB_Open| 21  \|  19| 24  \|  16| 24  \|  16| 19  \|  21|
+|6|AB_Center| 24  \|  16| 24  \|  16| 28  \|  12| 29  \|  11|
+|7|AB_Improved| 18  \|  22| 25  \|  15| 22  \|  18| 26  \|  14|
+||**Win Rate:**| **71.1%** | **76.1%** | **76.1%** | **75.4%** |
+
 ## Synopsis
 
 In this project, students will develop an adversarial search agent to play the game "Isolation".  Isolation is a deterministic, two-player game of perfect information in which the players alternate turns moving a single piece from one cell to another on a board.  Whenever either player occupies a cell, that cell becomes blocked for the remainder of the game.  The first player with no remaining legal moves loses, and the opponent is declared the winner.  These rules are implemented in the `isolation.Board` class provided in the repository. 
